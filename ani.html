@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      width: 400px;
+      height: 300px;
+      border-radius: 40px;
+      background-color:black;
+      box-shadow: rgba(218, 13, 208, 0.3) 10px 20px 60px, rgba(224, 12, 206, 0.22) 10px 20px 60px;
+      border: 2px solid yellow;
+      animation: growBox 1s ease-in-out infinite;
+    }
+
+    @keyframes growBox {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(2);
+      }
+      100% {
+        transform: scale(3);
+      }
+    }
+  </style>
+  <title>Box Animation</title>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
